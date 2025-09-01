@@ -1,0 +1,112 @@
+/* Navegación fija superior */
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 50;
+  transition: background-color 0.3s, box-shadow 0.3s;
+  background-color: transparent;
+}
+
+.navbar.scrolled {
+  background-color: rgba(31, 41, 55, 0.95); /* gris oscuro semitransparente */
+  backdrop-filter: blur(4px);
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+/* Contenedor para centrar elementos */
+.navbar-container {
+  max-width: 80rem; /* ~7xl */
+  margin: 0 auto;
+  padding: 0 1.5rem; /* px-6 */
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 4rem; /* h-16 */
+}
+
+/* Botón del logo */
+.logo-button {
+  font-size: 1.5rem; /* text-2xl */
+  font-weight: bold;
+  color: #FFFFFF;
+  background: none;
+  border: none;
+  cursor: pointer;
+  transition: color 0.3s;
+}
+.logo-button:hover {
+  color: #34D399;
+}
+
+/* Menú para desktop */
+.desktop-menu {
+  display: none;
+}
+@media (min-width: 768px) {
+  .desktop-menu {
+    display: flex;
+    gap: 2rem; /* space-x-8 */
+  }
+}
+
+.menu-button {
+  position: relative;
+  background: none;
+  border: none;
+  color: #D1D5DB; /* gray-300 */
+  font-weight: 500; /* font-medium */
+  cursor: pointer;
+  transition: color 0.3s;
+}
+.menu-button:hover {
+  color: #34D399;
+}
+.menu-button .underline {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 0.125rem; /* h-0.5 */
+  width: 0;
+  background-color: #34D399;
+  transition: width 0.3s;
+}
+.menu-button:hover .underline {
+  width: 100%;
+}
+
+/* Botón menú móvil */
+.mobile-menu-button {
+  background: none;
+  border: none;
+  color: #FFFFFF;
+  cursor: pointer;
+  display: block;
+}
+@media (min-width: 768px) {
+  .mobile-menu-button {
+    display: none;
+  }
+}
+
+/* Menú panel móvil desplegable */
+.mobile-menu {
+  background-color: rgba(31, 41, 55, 0.95);
+  backdrop-filter: blur(4px);
+  border-top: 1px solid #374151; /* gray-700 */
+}
+.mobile-menu-item {
+  width: 100%;
+  text-align: left;
+  padding: 0.5rem 0.75rem;
+  color: #D1D5DB;
+  background: none;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s;
+}
+.mobile-menu-item:hover {
+  color: #34D399;
+  background-color: #1F2937; /* gray-800 */
+}
