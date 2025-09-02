@@ -17,18 +17,18 @@
 
 /* Contenedor para centrar elementos */
 .navbar-container {
-  max-width: 80rem; /* ~7xl */
+  max-width: 80rem; 
   margin: 0 auto;
-  padding: 0 1.5rem; /* px-6 */
+  padding: 0 1.5rem; 
   display: flex;
   align-items: center;
   justify-content: space-between;
-  height: 4rem; /* h-16 */
+  height: 4rem; 
 }
 
 /* Botón del logo */
 .logo-button {
-  font-size: 1.5rem; /* text-2xl */
+  font-size: 1.5rem; 
   font-weight: bold;
   color: #FFFFFF;
   background: none;
@@ -47,7 +47,7 @@
 @media (min-width: 768px) {
   .desktop-menu {
     display: flex;
-    gap: 2rem; /* space-x-8 */
+    gap: 2rem; 
   }
 }
 
@@ -55,8 +55,8 @@
   position: relative;
   background: none;
   border: none;
-  color: #D1D5DB; /* gray-300 */
-  font-weight: 500; /* font-medium */
+  color: #D1D5DB; 
+  font-weight: 500; 
   cursor: pointer;
   transition: color 0.3s;
 }
@@ -67,7 +67,7 @@
   position: absolute;
   bottom: 0;
   left: 0;
-  height: 0.125rem; /* h-0.5 */
+  height: 0.125rem; 
   width: 0;
   background-color: #34D399;
   transition: width 0.3s;
@@ -94,7 +94,7 @@
 .mobile-menu {
   background-color: rgba(31, 41, 55, 0.95);
   backdrop-filter: blur(4px);
-  border-top: 1px solid #374151; /* gray-700 */
+  border-top: 1px solid #374151; 
 }
 .mobile-menu-item {
   width: 100%;
@@ -108,5 +108,5 @@
 }
 .mobile-menu-item:hover {
   color: #34D399;
-  background-color: #1F2937; /* gray-800 */
+  background-color: #1F2937; 
 }

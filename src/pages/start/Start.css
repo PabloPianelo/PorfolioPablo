@@ -8,8 +8,11 @@
   position: relative;
 }
 
+a{
+  text-decoration: none;
+}
 .hero__container {
-  max-width: 80rem; /* aprox. max-w-7xl */
+  max-width: 80rem; 
   margin-left: auto;
   margin-right: auto;
   padding-left: 1.5rem;
@@ -19,27 +22,27 @@
 @media (min-width: 1024px) {
   .hero__container {
     padding-left: 2rem;
-    padding-right: 2rem; /* lg:px-8 */
+    padding-right: 2rem; 
   }
 }
 
 .hero__grid {
   display: grid;
   grid-template-columns: 1fr;
-  gap: 3rem; /* gap-12 */
+  gap: 3rem; 
   align-items: center;
 }
 
 @media (min-width: 1024px) {
   .hero__grid {
-    grid-template-columns: repeat(2, 1fr); /* lg:grid-cols-2 */
+    grid-template-columns: repeat(2, 1fr); 
   }
 }
 
 .hero__left {
   display: flex;
   flex-direction: column;
-  gap: 2rem; /* espacio entre elementos (space-y-8) */
+  gap: 2rem; 
   opacity: 0;
   animation: fade-in 1s ease forwards;
 }
@@ -49,63 +52,63 @@
 }
 
 .hero__title {
-  font-size: 3rem; /* text-5xl */
+  font-size: 3rem; 
   font-weight: bold;
-  color: #FFF; /* text-white */
-  margin-bottom: 1rem; /* mb-4 */
+  color: #FFF; 
+  margin-bottom: 1rem; 
   line-height: 1.2;
 }
 
 @media (min-width: 1024px) {
   .hero__title {
-    font-size: 3.75rem; /* lg:text-6xl */
+    font-size: 3.75rem; 
   }
 }
 
 .hero__subtitle {
-  font-size: 1.25rem; /* text-xl */
-  color: #D1D5DB; /* text-gray-300 */
+  font-size: 1.25rem;
+  color: #D1D5DB;
   font-weight: 300;
   line-height: 1.6;
 }
 
 @media (min-width: 1024px) {
   .hero__subtitle {
-    font-size: 1.5rem; /* lg:text-2xl */
+    font-size: 1.5rem; 
   }
 }
 
 .hero__actions {
   display: flex;
   flex-direction: column;
-  gap: 1rem; /* gap-4 */
+  gap: 1rem; 
 }
 
 @media (min-width: 640px) {
   .hero__actions {
-    flex-direction: row; /* sm:flex-row */
+    flex-direction: row; 
   }
 }
 
 .btn {
   font-weight: 600;
-  padding: 1rem 2rem; /* py-4 px-8 */
-  border-radius: 0.5rem; /* rounded-lg */
+  padding: 1rem 2rem; 
+  border-radius: 0.5rem; 
   transition: all 0.3s;
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  gap: 0.5rem; /* gap-2 */
+  gap: 0.5rem; 
   cursor: pointer;
 }
 
 .btn--contact {
-  background-color: #84CC16; /* bg-green-400 */
-  color: #111827; /* text-gray-900 */
+  background-color: #84CC16; 
+  color: #111827; 
 }
 
 .btn--contact:hover {
-  background-color: #65A30D; /* hover:bg-green-500 */
+  background-color: #65A30D; 
   transform: scale(1.05);
   box-shadow: 0 10px 15px -3px rgba(0,0,0,0.1), 0 4px 6px -4px rgba(0,0,0,0.1); /* hover:shadow-lg */
 }
@@ -113,7 +116,7 @@
 .btn--download {
   background-color: transparent;
   color: #84CC16;
-  border: 2px solid #84CC16; /* border-green-400 */
+  border: 2px solid #84CC16;
 }
 
 .btn--download:hover {
@@ -126,22 +129,22 @@
   display: flex;
   justify-content: center;
   opacity: 0;
-  animation: fade-in 1s ease forwards 0.5s; /* delay: fade-in-delay */
+  animation: fade-in 1s ease forwards 0.5s; 
 }
 
 .hero__profile {
   position: relative;
-  width: 20rem; /* w-80 */
+  width: 20rem; 
   height: 20rem;
   border-radius: 50%;
   overflow: hidden;
   border: 4px solid #84CC16;
-  box-shadow: 0 25px 50px -12px rgba(0,0,0,0.25); /* shadow-2xl */
+  box-shadow: 0 25px 50px -12px rgba(0,0,0,0.25); 
 }
 
 @media (min-width: 1024px) {
   .hero__profile {
-    width: 24rem; /* lg:w-96 */
+    width: 24rem; 
     height: 24rem;
   }
 }
@@ -154,9 +157,9 @@
 
 .hero__status {
   position: absolute;
-  bottom: -1rem; /* -bottom-4 */
-  right: -1rem; /* -right-4 */
-  width: 3rem; /* w-12 */
+  bottom: -1rem; 
+  right: -1rem; 
+  width: 3rem; 
   height: 3rem;
   background-color: #84CC16;
   border-radius: 50%;
@@ -167,8 +170,8 @@
 }
 
 .hero__status-indicator {
-  width: 0.75rem; /* w-3 */
-  height: 0.75rem; /* h-3 */
+  width: 0.75rem; 
+  height: 0.75rem; 
   background-color: #111827;
   border-radius: 50%;
   animation: pulse 2s infinite;
@@ -181,12 +184,12 @@
 
 .hero__scroll {
   position: absolute;
-  bottom: 2rem; /* bottom-8 */
+  bottom: 2rem; 
   left: 50%;
   transform: translateX(-50%);
   color: #84CC16;
   transition: color 0.3s;
-  animation: bounce 2s infinite; /* animate-bounce */
+  animation: bounce 2s infinite; 
   background: none;
   border: none;
   cursor: pointer;

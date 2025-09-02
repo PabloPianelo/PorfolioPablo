@@ -21,7 +21,7 @@ function Skills() {
               <div className="skills-list">
                 {category.skills.map(skill => (
                   <div key={skill.name} className="skill-item">
-                    <span className="skill-icon"><img src="" alt="" />{skill.icon}</span>
+                    <span className="skill-icon"><img class="socket-logo"  src={skill.icon} alt="" /></span>
                     <span className="skill-name">{skill.name}</span>
                   </div>
                 ))}

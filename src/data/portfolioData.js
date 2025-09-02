@@ -3,31 +3,42 @@ export const skillsData = [
   {
     category: 'Frontend',
     skills: [
-      { name: 'HTML', icon: '🌐' },
-      { name: 'CSS', icon: '🎨' },
-      { name: 'JavaScript', icon: '⚡' },
-      { name: 'React', icon: '⚛️' }
+      { name: 'HTML', icon: 'https://cdn.svglogos.dev/logos/html-5.svg' },
+      { name: 'CSS', icon: 'https://cdn.svglogos.dev/logos/css-3.svg' },
+      { name: 'JavaScript', icon: 'https://cdn.svglogos.dev/logos/javascript.svg' },
+      { name: 'React', icon: 'https://cdn.svglogos.dev/logos/react.svg' },
+      { name: 'Java', icon: 'https://cdn.svglogos.dev/logos/java.svg' },
+      { name: 'Tailwindcss', icon: 'https://cdn.svglogos.dev/logos/tailwindcss-icon.svg' },
     ]
   },
   {
     category: 'Backend',
     skills: [
-      { name: 'Node.js', icon: '🟢' },
-      { name: 'Express', icon: '🚀' }
+      { name: 'Node.js', icon: 'https://cdn.svglogos.dev/logos/nodejs-icon.svg' },
+      { name: 'Express', icon: 'https://cdn.svglogos.dev/logos/express.svg' },
+      { name: 'PHP', icon: 'https://cdn.svglogos.dev/logos/php.svg' },
+
+      
     ]
   },
   {
     category: 'Base de Datos',
     skills: [
-      { name: 'MongoDB', icon: '🍃' },
-      { name: 'MySQL', icon: '🐬' }
+      { name: 'MongoDB', icon: 'https://cdn.svglogos.dev/logos/mongodb-icon.svg' },
+      { name: 'MySQL', icon: 'https://cdn.svglogos.dev/logos/mysql.svg' }
     ]
   },
   {
     category: 'Herramientas',
     skills: [
-      { name: 'Git', icon: '📝' },
-      { name: 'GitHub', icon: '🐙' }
+      { name: 'Git', icon: 'https://cdn.svglogos.dev/logos/git.svg' },
+      { name: 'GitHub', icon: 'https://cdn.svglogos.dev/logos/github-icon.svg' },
+      { name: 'Postman', icon: 'https://cdn.svglogos.dev/logos/postman-icon.svg' },
+      { name: 'Socket.IO', icon: 'https://cdn.svglogos.dev/logos/socket.io.svg' },
+      { name: 'VS Code', icon: 'https://cdn.svglogos.dev/logos/visual-studio-code.svg' },
+      { name: 'VS', icon: 'https://cdn.svglogos.dev/logos/visual-studio.svg' }
+
+      
     ]
   }
 ];
