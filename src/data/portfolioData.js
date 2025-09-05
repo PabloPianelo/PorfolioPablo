@@ -1,3 +1,8 @@
+import MuseoCamisetaGif from '../assets/museo-camisetas.gif';
+import FicharGif from '../assets/fichar.gif';
+import MedicamentosGif from '../assets/medicamentos.gif';
+import MoodayGif from '../assets/Mooday.gif';
+
 
 export const skillsData = [
   {
@@ -17,6 +22,7 @@ export const skillsData = [
       { name: 'Node.js', icon: 'https://cdn.svglogos.dev/logos/nodejs-icon.svg' },
       { name: 'Express', icon: 'https://cdn.svglogos.dev/logos/express.svg' },
       { name: 'PHP', icon: 'https://cdn.svglogos.dev/logos/php.svg' },
+      { name: 'C#', icon: 'https://cdn.svglogos.dev/logos/c-sharp.svg' },
 
       
     ]
@@ -93,31 +99,59 @@ export const experienceData = [
 
 export const projectsData= [
   {
-    id: 'ecommerce-app',
-    title: 'E-commerce Platform',
-    description: 'Plataforma de comercio electrónico completa con carrito de compras, gestión de usuarios y panel de administración.',
-    image: 'https://images.pexels.com/photos/34577/pexels-photo.jpg?auto=compress&cs=tinysrgb&w=500',
-    technologies: ['React', 'Node.js', 'MongoDB', 'Express'],
-    codeUrl: 'https://github.com',
-    demoUrl: 'https://demo.com'
+    id: 'Mooday',
+    priority: true,
+    title: 'Mooday',
+    description: 'Mooday es una aplicación en la que podrás encontrar tu libro ideal según tus preferencias y compartir tus recomendaciones con otros usuarios.',
+    image: MoodayGif,
+    technologies: ['React', 'Node.js', 'MongoDB', 'Express', 'Socket.IO', 'Tailwindcss'],
+    team:['Pablo Pianelo','Nuria Pérez Uclés','Maria Paula Castro'],
+    video:'',
+    codeUrl: 'https://github.com/PabloPianelo/TFM-backend-amarillo',
+    codeUrl2: 'https://github.com/PabloPianelo/TFM-frontend-amarillo',
+    demoUrl: 'https://demo.com',
+    linkedinURl:'https://www.linkedin.com/feed/update/urn:li:activity:7353719106916827136/'
   },
   {
-    id: 'task-management',
-    title: 'Task Management App',
-    description: 'Aplicación de gestión de tareas con funcionalidades de colaboración en tiempo real y seguimiento de progreso.',
-    image: 'https://images.pexels.com/photos/3184291/pexels-photo-3184291.jpeg?auto=compress&cs=tinysrgb&w=500',
-    technologies: ['React', 'JavaScript', 'CSS'],
-    codeUrl: 'https://github.com',
-    demoUrl: 'https://demo.com'
+    id: 'Fichar',
+    priority: true,
+    title: 'FicharApp',
+    description: 'Es una aplicación web enfocada en el control de entrada y salida de usuarios asociados a una empresa.',
+    image: FicharGif,
+    technologies: ['HTML', 'CSS', 'Java Scritp', 'PHP', 'MySQL'],
+    team:['Pablo Pianelo'],
+    video:'',
+    codeUrl: 'https://github.com/PabloPianelo/Fichar',
+    demoUrl: 'https://demo.com',
+    linkedinURl:'https://www.linkedin.com/feed/update/urn:li:activity:7361335756864319488/?updateEntityUrn=urn%3Ali%3Afs_feedUpdate%3A%28V2%2Curn%3Ali%3Aactivity%3A7361335756864319488%29'
+
   },
   {
-    id: 'weather-dashboard',
-    title: 'Weather Dashboard',
-    description: 'Dashboard meteorológico interactivo con visualización de datos en tiempo real y predicciones extendidas.',
-    image: 'https://images.pexels.com/photos/1118873/pexels-photo-1118873.jpeg?auto=compress&cs=tinysrgb&w=500',
-    technologies: ['JavaScript', 'HTML', 'CSS', 'API'],
-    codeUrl: 'https://github.com',
-    demoUrl: 'https://demo.com'
+    id: 'Farmacia',
+    priority: true,
+    title: 'FarmaciaApp',
+    description: 'Es una aplicación de gestión de medicamentos y pacientes.',
+    image: MedicamentosGif,
+    technologies: ['HTML', 'CSS', 'Java Scritp', 'PHP', 'MySQL','Thee.js'],
+    team:['Pablo Pianelo'],
+    video:'',
+    codeUrl: 'https://github.com/PabloPianelo/ProyectoFinDAW_Farmacia',
+    demoUrl: 'https://demo.com',
+    linkedinURl:'https://www.linkedin.com/feed/update/urn:li:activity:7358799046624317440/?updateEntityUrn=urn%3Ali%3Afs_feedUpdate%3A%28V2%2Curn%3Ali%3Aactivity%3A7358799046624317440%29'
+
+  },{
+    id: 'Museo de las camisetas',
+    priority: false,
+    title: 'Museo de las camisetas',
+    description: 'Es una aplicación de escritorio que permite al usuario subir una imagen y verla impresa en distintos modelos de camiseta.',
+    image:MuseoCamisetaGif ,
+    technologies: ['WPF', 'XAML', 'C#', '.NET','MySQL'],
+    team:['Pablo Pianelo'],
+    video:'',
+    codeUrl: 'https://github.com/PabloPianelo/ProyectoFinDAM_Escaparate_Camisetas',
+    demoUrl: 'https://demo.com',
+    linkedinURl:'https://www.linkedin.com/feed/update/urn:li:activity:7356262290184142848/?updateEntityUrn=urn%3Ali%3Afs_feedUpdate%3A%28V2%2Curn%3Ali%3Aactivity%3A7356262290184142848%29'
+
   }
 ];
 
