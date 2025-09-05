@@ -1,14 +1,16 @@
-.timeline-section {
-  padding: 5rem 0; 
-  position: relative;
-}
+
 
 .timeline-bg-white {
+  padding-top: 5rem;
   background-color: #111827;
+  padding-bottom: 5rem;
 }
 
 .timeline-bg-gray {
+  padding-top: 5rem;
   background-color: #1a233a;
+    padding-bottom: 5rem;
+
 }
 
 .timeline-container {
@@ -16,6 +18,7 @@
   margin: 0 auto;
   padding: 0 1.5rem;
 }
+
 
 @media (min-width: 1024px) {
   .timeline-container {

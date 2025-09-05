@@ -52,13 +52,13 @@ export const educationData= [
     institution: 'Nuclio Digital School',
     period: '2025',
     description: 'Formación avanzada en desarrollo web full-stack con enfoque en tecnologías modernas y metodologías ágiles.',
-    technologies: ['React', 'Node.js', 'MongoDB', 'TypeScript', 'Docker']
+    technologies: ['React', 'Node.js', 'MongoDB', 'JavaScript', 'Soket.IO']
   },
   {
     id: 'daw-joseplanes',
     title: 'Grado Superior Desarrollo de Aplicaciones Web',
     institution: 'IES José Planes (Murcia)',
-    period: '2023 - 2024',
+    period: '2023',
     description: 'Formación especializada en desarrollo web con énfasis en frontend y backend, bases de datos y arquitectura web.',
     technologies: ['HTML', 'CSS', 'JavaScript', 'PHP', 'MySQL']
   },
@@ -66,9 +66,9 @@ export const educationData= [
     id: 'dam-alfonso',
     title: 'Grado Superior Desarrollo de Aplicaciones Multiplataforma',
     institution: 'IES Alfonso X El Sabio (Murcia)',
-    period: '2022 - 2023',
+    period: '2022',
     description: 'Fundamentos del desarrollo de software multiplataforma con programación orientada a objetos y gestión de bases de datos.',
-    technologies: ['Java', 'MySQL', 'Android', 'SQLite']
+    technologies: ['Java', 'MySQL', 'Android', 'PHP']
   }
 ];
 
@@ -77,7 +77,7 @@ export const experienceData = [
     id: 'imas-2024',
     title: 'Programador Web',
     institution: 'IMAS (Instituto Murciano de Acción Social)',
-    period: 'Abril - Junio 2024',
+    period: '2024',
     description: 'Desarrollo de proyectos web internos utilizando tecnologías web clásicas y bases de datos relacionales.',
     technologies: ['PHP', 'HTML', 'CSS', 'MySQL']
   },
@@ -85,9 +85,9 @@ export const experienceData = [
     id: 'minderest-2023',
     title: 'Desarrollador de Software',
     institution: 'Minderest',
-    period: 'Abril - Junio 2023',
+    period: '2023',
     description: 'Investigación y desarrollo de proyectos de web scraping y gestión de versiones en repositorios colaborativos.',
-    technologies: ['Python', 'Git', 'GitHub', 'Web Scraping']
+    technologies: ['Java', 'Git', 'GitHub', 'Web Scraping']
   }
 ];
 
