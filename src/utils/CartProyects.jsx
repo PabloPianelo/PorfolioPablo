@@ -3,7 +3,9 @@ import { ExternalLink, Github } from "lucide-react";
 import "../pages/projects/Projects.css";
 import ReactPaginate from "react-paginate";
 import Pagination from "./Pagination";
+import { useNavigate } from "react-router-dom";
 const Cartprojects = ({ Data }) => {
+  const navigate = useNavigate();
   // Configuración de paginación
   const [currentPage, setCurrentPage] = useState(0);
   const itemsPerPage = 3;
@@ -20,6 +22,11 @@ const Cartprojects = ({ Data }) => {
     currentPage * itemsPerPage,
     (currentPage + 1) * itemsPerPage
   );
+
+
+  const handlePerfil = (project) => {
+     navigate(`/projects/ProjectDetails`, { state: { project: project } });
+  }
   return (
     <>
     <div className="projects-grid">
@@ -70,7 +77,9 @@ const Cartprojects = ({ Data }) => {
                 </a>
               )}
               {/* boton que me lleve a saber mas sobre el proyecto */}
-              <a
+              <button
+              onClick={() => handlePerfil(project)}
+            
                 href={project.demoUrl}
                 target="_blank"
                 rel="noopener noreferrer"
@@ -78,7 +87,7 @@ const Cartprojects = ({ Data }) => {
               >
                 <ExternalLink size={18} />
                 Ver más
-              </a>
+              </button>
             </div>
           </div>
         </div>

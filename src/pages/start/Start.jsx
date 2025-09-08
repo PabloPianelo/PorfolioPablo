@@ -18,7 +18,7 @@ function Start() {
         <div className="hero__grid">
           <div className="hero__left">
             <div>
-              <h1 className="hero__title">Pablo Pianelo</h1>
+              <h1 className="hero__title">Pablo Pianelo Alonso</h1>
               <h2 className="hero__subtitle">
                 Soy un desarrollador de software con pasión por el aprendizaje
                 continuo y la resolución de problemas. Me especializo en crear

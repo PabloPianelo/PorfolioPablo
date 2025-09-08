@@ -7,8 +7,16 @@ import Navigation from './pages/navigation/Navigation'
 import Footer from './pages/footer/Foot';
 import Contact from './pages/contact/Contact'; 
 import Projects from './pages/projects/Projects';
+import { useEffect } from 'react';
 function Home() {
-
+ useEffect(() => {
+    if (location.hash) {
+      const element = document.getElementById(location.hash.slice(1));
+      if (element) {
+        element.scrollIntoView({ behavior: 'smooth' });
+      }
+    }
+  }, [location]);
   return (
     <>
      <div className="app">

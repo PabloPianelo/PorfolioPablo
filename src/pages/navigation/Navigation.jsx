@@ -31,7 +31,7 @@ const Navigation = () => {
     <nav className={`navbar ${isScrolled ? 'scrolled' : ''}`}>
       <div className="navbar-container">
         <button onClick={() => scrollToSection('hero')} className="logo-button">
-          PP
+          PPA
         </button>
 
         <div className="desktop-menu">

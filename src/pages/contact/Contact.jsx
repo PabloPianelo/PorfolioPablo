@@ -1,26 +1,36 @@
 import { Mail, Linkedin, Github } from 'lucide-react';
 import './Contact.css';
+import { toast, Toaster } from 'sonner';
 const Contact = () => {
+
+   const handleCopyEmail = async (email) => {
+    try {
+      await navigator.clipboard.writeText(email);
+      toast.success('Correo electrónico copiado al portapapeles');
+    } catch (err) {
+      console.error('Error al copiar el texto: ', err);
+      toast.error('No se pudo copiar el correo electrónico');
+    }
+  };
   const contactMethods = [
     {
       icon: <Mail className="icon" />,
       label: 'Email',
-      value: 'pablo.pianelo@email.com',
-      href: 'mailto:pablo.pianelo@email.com',
-      description: 'Envíame un correo directo',
+      value: 'pablopianeloxd@gmail.com',
+      description: 'Contactame por correo directo',
     },
     {
       icon: <Linkedin className="icon" />,
       label: 'LinkedIn',
       value: 'Pablo Pianelo',
-      href: 'https://linkedin.com/in/pablo-pianelo',
+      href: 'https://www.linkedin.com/in/pablopianeloalonso/',
       description: 'Conectemos profesionalmente',
     },
     {
       icon: <Github className="icon" />,
       label: 'GitHub',
       value: 'pablo-pianelo',
-      href: 'https://github.com/pablo-pianelo',
+      href: 'https://github.com/PabloPianelo',
       description: 'Explora mis repositorios',
     },
   ];
@@ -31,16 +41,21 @@ const Contact = () => {
         <div className="header">
           <h2>Hablemos</h2>
           <p>
-            ¿Tienes un proyecto en mente? Me encantaría escuchar sobre tu idea y cómo puedo ayudarte a hacerla realidad.
+            ¿Estas buscando un desarrollador de software con pasión? ¡No dudes en contactarme!
           </p>
         </div>
 
+          <Toaster  position="bottom-right" richColors/>
         <div className="contact-methods">
           {contactMethods.map((method, index) => (
+            
             <div
               key={method.label}
               className="contact-method"
               style={{ animationDelay: `${index * 0.1}s` }}
+            onClick={method.label === 'Email' ? () => handleCopyEmail(method.value) : null}
+              // Asegúrate de que el cursor cambie para indicar que es clickeable
+             
             >
               <div className="icon-container">
                 <div className="icon-background">
