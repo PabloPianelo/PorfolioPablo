@@ -16,6 +16,7 @@ const Contact = () => {
     {
       icon: <Mail className="icon" />,
       label: 'Email',
+       href: '#contact',
       value: 'pablopianeloxd@gmail.com',
       description: 'Contactame por correo directo',
     },
@@ -53,8 +54,8 @@ const Contact = () => {
               key={method.label}
               className="contact-method"
               style={{ animationDelay: `${index * 0.1}s` }}
-            onClick={method.label === 'Email' ? () => handleCopyEmail(method.value) : null}
-              // Asegúrate de que el cursor cambie para indicar que es clickeable
+           
+              
              
             >
               <div className="icon-container">
@@ -65,6 +66,7 @@ const Contact = () => {
               <h3>{method.label}</h3>
               <p>{method.description}</p>
               <a
+               onClick={method.label === 'Email' ? () => handleCopyEmail(method.value) : null}
                 href={method.href}
                 target={method.label !== 'Email' ? '_blank' : undefined}
                 rel={method.label !== 'Email' ? 'noopener noreferrer' : undefined}
