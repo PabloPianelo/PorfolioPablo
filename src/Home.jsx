@@ -4,7 +4,6 @@ import Start from './pages/start/Start'
 import Timeline from './utils/TimeLine'
 import { educationData,experienceData } from './data/portfolioData';
 import Navigation from './pages/navigation/Navigation'
-import Footer from './pages/footer/Foot';
 import Contact from './pages/contact/Contact'; 
 import Projects from './pages/projects/Projects';
 import { useEffect } from 'react';
@@ -54,7 +53,7 @@ function Home() {
       </main>
 
       <footer className="footer">
-       {/* <Footer /> */}
+       
       </footer>
     </div>
     </>

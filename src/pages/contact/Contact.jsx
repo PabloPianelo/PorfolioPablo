@@ -41,8 +41,9 @@ const Contact = () => {
       <div className="container">
         <div className="header">
           <h2>Hablemos</h2>
+          <div className="underline"></div>
           <p>
-            ¿Estas buscando un desarrollador de software con pasión? ¡No dudes en contactarme!
+            ¿Estás buscando un desarrollador de software con pasión? ¡No dudes en contactarme!
           </p>
         </div>
 

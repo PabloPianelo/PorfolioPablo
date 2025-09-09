@@ -125,7 +125,7 @@ export const projectsData= [
     description: 'Es una aplicación web enfocada en el control de entrada y salida de usuarios asociados a una empresa.',
     image: FicharGif,
     longDescription:'Fichar es una aplicación web  diseñada para optimizar el control de entrada y salida de empleados en una empresa. Esta plataforma permite a los usuarios registrar sus horarios de manera eficiente, facilitando la gestión del tiempo y mejorando la productividad organizacional. Con una interfaz intuitiva, los empleados pueden fichar fácilmente al iniciar y finalizar su jornada laboral, mientras que los administradores tienen acceso a informes detallados sobre la asistencia y puntualidad del personal. Fichar no solo simplifica el proceso de registro de horas, sino que también contribuye a una mejor planificación de recursos humanos y cumplimiento de normativas laborales.',
-    curiosity:['Gestion de usuarios y roles en la base de datos','Que se pueda generar un informe de asistencia y  habilitar o deshabilitar usuarios'],
+    curiosity:['Gestión de usuarios y roles en la base de datos','Que se pueda generar un informe de asistencia y  habilitar o deshabilitar usuarios'],
     technologies: ['HTML', 'CSS', 'Java Scritp', 'PHP', 'MySQL'],
     team:['Pablo Pianelo'],
     video:FicharVideo,
