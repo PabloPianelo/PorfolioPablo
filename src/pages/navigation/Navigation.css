@@ -89,6 +89,13 @@
     display: none;
   }
 }
+.menu-button:focus,
+.mobile-menu-button:focus {
+  outline: none; 
+  
+ 
+}
+
 
 /* Menú panel móvil desplegable */
 .mobile-menu {
