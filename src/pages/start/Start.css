@@ -23,8 +23,10 @@ a{
   .hero__container {
     padding-left: 2rem;
     padding-right: 2rem; 
+    margin-top: 200px;
   }
 }
+
 
 .hero__grid {
   display: grid;
@@ -39,6 +41,11 @@ a{
   }
 }
 
+@media (max-width: 1023px) {
+  .hero__left {
+    margin-top: 4rem; /* puedes aumentar o reducir este valor según necesites */
+  }
+}
 .hero__left {
   display: flex;
   flex-direction: column;
