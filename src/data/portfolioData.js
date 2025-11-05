@@ -6,6 +6,8 @@ import MoodayVideo from '../assets/Mooday.mp4';
 import MuseoCamisetaVideo from '../assets/camisetas.mp4';
 import FicharVideo from '../assets/fichar.mp4';
 import MedicamentosVideo from '../assets/medicamento.mp4';
+import FlowcareVideo from '../assets/FlowcareVideo.mp4';
+import FlowcareGif from '../assets/FlowcareVideo.gif';
 
 
 export const skillsData = [
@@ -18,6 +20,8 @@ export const skillsData = [
       { name: 'React', icon: 'https://cdn.svglogos.dev/logos/react.svg' },
       { name: 'Java', icon: 'https://cdn.svglogos.dev/logos/java.svg' },
       { name: 'Tailwindcss', icon: 'https://cdn.svglogos.dev/logos/tailwindcss-icon.svg' },
+      { name: 'Nextjs', icon: 'https://cdn.svglogos.dev/logos/nextjs-icon.svg' },
+      { name: 'TypeScript', icon: 'https://cdn.svglogos.dev/logos/typescript-icon.svg' }
     ]
   },
   {
@@ -27,6 +31,7 @@ export const skillsData = [
       { name: 'Express', icon: 'https://cdn.svglogos.dev/logos/express.svg' },
       { name: 'PHP', icon: 'https://cdn.svglogos.dev/logos/php.svg' },
       { name: 'C#', icon: 'https://cdn.svglogos.dev/logos/c-sharp.svg' },
+      { name: 'Prisma', icon: 'https://cdn.svglogos.dev/logos/prisma.svg' }
 
       
     ]
@@ -103,6 +108,21 @@ export const experienceData = [
 
 export const projectsData= [
   {
+    id: 'Flowcare',
+    priority: true,
+    title: 'Flowcare',
+    description:'Flowcare es una aplicación de manejo de citas medicas ',
+    curiosity:['Gestion de usuarios por parte de administradores','Videollamada mediante en tiempo real','Gestion de citas por parte de pacientes y docotores'],
+    longDescription: 'Nuestra app facilita la gestión integral de citas médicas para pacientes, profesionales y centros de salud. Los pacientes pueden buscar médicos por especialidad o centro, reservar citas presenciales o videoconsultas, recibir recordatorios y consultar su historial de citas. Los centros registran y administran a sus médicos, horarios y servicios; los profesionales gestionan su agenda, aceptan o rechazan citas y realizan videollamadas seguras desde la misma aplicación. ',
+    image: FlowcareGif,
+    technologies: ['Next.js', 'TypeScript', 'Java Scritp', 'Socket.IO','Tailwindcss','Express.js','PostgreSQL','Next Auth','Simple-peer'],
+    team:['Pablo Pianelo','Jeremy','Juanma','Paula','Carlos'],
+    video: FlowcareVideo,
+    codeUrl: 'https://github.com/PabloPianelo/flowcare',
+    demoUrl: 'https://demo.com',
+    linkedinURl:'https://www.linkedin.com/posts/pablopianeloalonso_fullstack-nocountry-proyectocolaborativo-activity-7391776299255689216-TOQS?utm_source=share&utm_medium=member_desktop&rcm=ACoAADrA9h4Bnod9XY6f4dsMalc1vWdDi-K-18s'
+
+  },{
     id: 'Mooday',
     priority: true,
     title: 'Mooday',
