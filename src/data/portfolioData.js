@@ -89,6 +89,14 @@ export const educationData= [
 
 export const experienceData = [
   {
+    id: 'gowtech-2025',
+    title: 'Programador Web',
+    institution: 'GowTech',
+    period: 'Actualidad',
+    description: "Desarrollo de aplicaciones web utilizando tecnologías web modernas y bases de datos relacionales.",
+    technologies: ['JavaScript', 'Linux', 'nuxt', 'MySQL']
+  },
+  {
     id: 'imas-2024',
     title: 'Programador Web',
     institution: 'IMAS (Instituto Murciano de Acción Social)',

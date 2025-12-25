@@ -28,11 +28,11 @@ function Start() {
                 <div class="status-row">
                   {/*disponible*/}
                   <div class="status-indicator">
-                    <div class="status-circle online"/>
-                    <div class="tooltip">Disponible</div>
+                    {/* <div class="status-circle online"/>
+                    <div class="tooltip">Disponible</div> */}
                     {/*ocupado*/}
-                     {/* <div class="status-circle offline"/>
-                    <div class="tooltip offline">Ocupado</div> */}
+                     <div class="status-circle offline"/>
+                    <div class="tooltip offline">Ocupado</div>
                   </div>
                 </div>
               </h2>
